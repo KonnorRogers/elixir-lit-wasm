@@ -41,6 +41,14 @@ config :esbuild,
     env: %{"NODE_PATH" => [Path.expand("../deps", __DIR__), Mix.Project.build_path()]}
   ]
 
+# Lit SSR — renders Web Awesome / Lit custom elements server-side through the
+# Extism wasm plugin built in ../../../lit-wasm-plugin.
+#
+# For releases, copy plugin.wasm into priv/ and point this at, e.g.,
+# Path.join(:code.priv_dir(:myapp), "wasm/plugin.wasm") in runtime.exs.
+config :myapp, :lit_ssr,
+  wasm_path: Path.expand("../../../lit-wasm-plugin/dist/plugin.wasm", __DIR__)
+
 # Configures Elixir's Logger
 config :logger, :default_formatter,
   format: "$time $metadata[$level] $message\n",

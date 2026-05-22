@@ -14,8 +14,8 @@ defmodule Myapp.Application do
        repos: Application.fetch_env!(:myapp, :ecto_repos), skip: skip_migrations?()},
       {DNSCluster, query: Application.get_env(:myapp, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Myapp.PubSub},
-      # Start a worker by calling: Myapp.Worker.start_link(arg)
-      # {Myapp.Worker, arg},
+      # Owns the Extism wasm plugin used to server-render Lit components.
+      Myapp.LitSSR,
       # Start to serve requests, typically the last entry
       MyappWeb.Endpoint
     ]
