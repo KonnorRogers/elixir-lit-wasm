@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@lit-labs/ssr-client": "^1.1.8"
+  }
+}
