@@ -1,5 +1,5 @@
 /* Web Awesome theme — bundled by esbuild from node_modules */
-@import "@awesome.me/webawesome-pro/dist/styles/themes/default.css";
-@import "@awesome.me/webawesome-pro/dist/styles/webawesome.css";
+@import "@awesome.me/webawesome/dist/styles/themes/default.css";
+@import "@awesome.me/webawesome/dist/styles/webawesome.css";
 
 /* This file is for your main application CSS */

@@ -1,0 +1,3 @@
+[submodule "assets/lit-wasm-plugin"]
+	path = assets/lit-wasm-plugin
+	url = https://github.com/konnorrogers/lit-wasm-plugin
