@@ -11,7 +11,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@awesome.me/webawesome-pro": "file:../../../webawesome-app/webawesome/packages/webawesome-pro",
-    "lit-wasm-plugin": "file:../../../lit-wasm-plugin"
+    "@awesome.me/webawesome": "file:./lit-wasm-plugin-webawesome-app/webawesome/packages/webawesome",
+    "lit-wasm-plugin": "file:./lit-wasm-plugin"
   }
 }
